@@ -1,6 +1,6 @@
 ## EasyWidget
 
-[![License](https://img.shields.io/badge/license-GPL--3.0-red)
+![License](https://img.shields.io/badge/license-GPL--3.0-red)
 
 Configuring a Widget has more to do with SiriKit than with the actual Widget.
 This Source is to make Widget Configuration easier.
@@ -37,14 +37,12 @@ TODO:
 
 
 ## License
+ EasyWidget  
+ Copyright (C) 2020  github.com/ a1core
 
-
-   EasyWidget
-   Copyright (C) 2020  github.com/ a1core
-
-   This program is free software: you can redistribute it and/or modify
-   it under the terms of the GNU General Public License as published by
-   the Free Software Foundation, either version 3 of the License, or
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
    (at your option) any later version.
 
    This program is distributed in the hope that it will be useful,
