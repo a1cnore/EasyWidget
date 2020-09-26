@@ -10,7 +10,7 @@ This Source is to make Widget Configuration easier.
 Here is the Smallest Widget:
 
     struct ExampleWidget: Widget {
-        typealias widget = BareBoneWidget<Intent_Intent,BareEntry>
+        typealias widget = EasyWidget<Intent_Intent,BareEntry>
         var body: some WidgetConfiguration {
             widget(identifier: "AWidget", widget.Provider(computeTimeline: { (config) -> Timeline<BareEntry> in
                 Timeline(entries: [BareEntry()], policy: .never)
@@ -26,7 +26,7 @@ How to set it up:
 
 Add the following line to ur Widget 
 
-        typealias widget = BareBoneWidget<Intent,Entry>
+        typealias widget = EasyWidget<Intent,Entry>
 
 and use widgets .body property to parse the WidgetConfiguration in ur Widget.
 
