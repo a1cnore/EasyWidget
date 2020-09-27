@@ -40,6 +40,8 @@ Add the following line to ur Widget
 
 and use widgets .body property to parse the WidgetConfiguration in ur Widget.
 
+Currently only IntentTimelines are supported, feel free to contribute.
+
 TODO:
 -  Documentation
 -  EasyIntents 
