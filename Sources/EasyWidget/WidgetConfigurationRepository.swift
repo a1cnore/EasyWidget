@@ -8,7 +8,7 @@ import Intents
 /*
  
  */
-protocol WidgetConfigurationRepository {
+public protocol WidgetConfigurationRepository {
     associatedtype Intent
     associatedtype Entry
     static var  widgets: [Entry] { get }
