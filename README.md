@@ -21,7 +21,7 @@ Timeline, Snapshot and Placeholder get computed by your closure.
     struct ExampleWidget: Widget {
         typealias widget = EasyWidget<Intent_Intent,BareEntry>
         var body: some WidgetConfiguration {
-            widget(identifier: "AWidget", widget.Provider(
+            widget(identifier: "ExampleWidget", widget.Provider(
                computeTimeline: { (config) -> Timeline<BareEntry> in
                 Timeline(entries: [BareEntry()], policy: .never)
             }, computeSnapshot: { (config) -> BareEntry in
