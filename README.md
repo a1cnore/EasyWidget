@@ -10,6 +10,15 @@ This Source is to make Widget Configuration easier.
 Here is the Smallest Widget:
 
     struct ExampleWidget: Widget {
+        var body: some WidgetConfiguration {
+            EasyWidget<Intent,Entry>().body
+        }
+    }
+    
+not very useful as its just a Broken Widget.
+Timeline, Snapshot and Placeholder get computed by your closure.
+
+    struct ExampleWidget: Widget {
         typealias widget = EasyWidget<Intent_Intent,BareEntry>
         var body: some WidgetConfiguration {
             widget(identifier: "AWidget", widget.Provider(
