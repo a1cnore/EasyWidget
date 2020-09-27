@@ -14,6 +14,7 @@ public struct EasyWidget<Intent,Entry>: Widget where Intent: INIntent, Entry: Ti
         self.provider = provider
         self.identifier = identifier
     }
+    
     // used for advanced setup later
 //    public init<T: TimeLineEntryViewable>(identifier: String, entryType: T, provider: Provider) {
 //        self.identifier = identifier
@@ -37,25 +38,7 @@ public struct EasyWidget<Intent,Entry>: Widget where Intent: INIntent, Entry: Ti
             EntryView(entry: entry)
         }
     }
-    public struct EasyEntry: TimeLineEntryViewable {
-        public var date: Date
-        public var view: AnyView
-        init() {
-            self.date = Date()
-            self.view = AnyView(Text("\(Date())"))
-        }
-    }
-   
-    public struct EasyEntryView<Entry: TimeLineEntryViewable> : View {
-        var entry: Entry?
-        @ViewBuilder
-        public var body: some View {
-            if entry == nil {
-                Text("\(Date())")
-            } else {
-                entry!.view.padding()
-            }
-        }
-    }
 }
+
+
 
