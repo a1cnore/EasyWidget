@@ -1,6 +1,9 @@
 ## EasyWidget
 
-![License](https://img.shields.io/badge/license-GPL--3.0-red) ![Version](https://img.shields.io/badge/version-alpha-red)
+![SVersion](https://img.shields.io/badge/Swift-5.3-orange)
+![License](https://img.shields.io/badge/license-GPL--3.0-red) ![Version](https://img.shields.io/badge/version-alpha-red) 
+![Tests](https://img.shields.io/badge/test%20coverage-0%25-red) 
+![Docs](https://img.shields.io/badge/doc-0%25-red) 
 
 Configuring a Widget has more to do with SiriKit than with the actual Widget.
 This Source is to make Widget Configuration easier.
