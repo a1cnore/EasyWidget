@@ -19,6 +19,15 @@ Here is the Smallest Widget:
             })).body
         }
     }
+    
+or even smaller, but not very useful at the Moment:
+
+
+    struct MiniWidget: Widget {
+        var body: some WidgetConfiguration {
+            EasyWidget<Intent,Entry>().body
+        }
+    }
 
 How to set it up:
 
