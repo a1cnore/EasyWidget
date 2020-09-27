@@ -8,21 +8,19 @@ import SwiftUI
 /*
  
  */
-public struct EasyEntry: TimeLineEntryViewable {
+public class EasyEntry: TimeLineEntryViewable {
     public var date: Date
     public var view: AnyView
-}
-
-extension EasyEntry {
-    
-    public init() {
-        self.date = Date()
-        self.view = AnyView(Text("\(Date())"))
-    }
     
     public init(_ date: Date = Date(), _ content: AnyView) {
         self.date = date
         self.view = content
+    }
+}
+
+extension EasyEntry {
+    public convenience init() {
+        self.init(Date(),AnyView(Text("\(Date())")))
     }
 }
 

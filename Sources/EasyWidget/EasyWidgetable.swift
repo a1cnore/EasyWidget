@@ -13,3 +13,4 @@ public protocol EasyWidgetable {
     typealias Widget = EasyWidget<Intent,Entry>
 }
 
+ 
