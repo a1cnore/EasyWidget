@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  EasyWidgetable.swift
 //  
 //
 //  Created by Marvin Kleinpass on 27.09.20.
