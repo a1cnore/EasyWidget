@@ -7,7 +7,7 @@
 
 import Intents
 
-protocol EasyWidgetable {
+public protocol EasyWidgetable {
     associatedtype Intent: INIntent
     associatedtype Entry: TimeLineEntryViewable
     typealias Widget = EasyWidget<Intent,Entry>
