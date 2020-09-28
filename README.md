@@ -22,11 +22,11 @@ Timeline, Snapshot and Placeholder get computed by your closure.
     struct ExampleWidget: Widget {
            Widget(identifier: "Example",
             Widget.Provider(
-               { _ in
+               { _ in // TimeLine
                 Timeline(entries: [Entry()], policy: .never)
-            }, { _ in
+            }, { _ in // Snapshot
                 Entry()
-            }, { _ in
+            }, { _ in // Placeholder
                 Entry()
            })).body
         }
