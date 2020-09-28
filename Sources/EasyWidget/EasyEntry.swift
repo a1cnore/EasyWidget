@@ -18,9 +18,13 @@ public class EasyEntry<T>: TimeLineEntryViewable {
         self.view = content
         self.data = data
     }
-    
+     
     public convenience init() {
         self.init(Date(),AnyView(Text("\(Date())")), data: nil)
+    }
+    
+    public convenience init(_ text: String) {
+        self.init(Date(),AnyView(Text(text)), data: nil)
     }
 }
 
