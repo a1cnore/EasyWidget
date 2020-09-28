@@ -9,50 +9,29 @@ Configuring a Widget has more to do with SiriKit than with the actual Widget.
 This Source is to make Widget Configuration easier.
 
 
- 
-Here is the Smallest Widget:
+Conform to Widgetable:
 
-    struct ExampleWidget: Widget {
-        var body: some WidgetConfiguration {
-            EasyWidget<Intent,Entry>().body
-        }
+    public protocol EasyWidgetable {
+      associatedtype Intent: INIntent
+      associatedtype Entry: TimeLineEntryViewable
+      typealias Widget = EasyWidget<Intent,Entry>
     }
-    
-not very useful as its just a Broken Widget.
+ 
 Timeline, Snapshot and Placeholder get computed by your closure.
 
     struct ExampleWidget: Widget {
-        typealias widget = EasyWidget<Intent_Intent,BareEntry>
-        var body: some WidgetConfiguration {
-            widget(identifier: "ExampleWidget", widget.Provider(
-               computeTimeline: { (config) -> Timeline<BareEntry> in
-                Timeline(entries: [BareEntry()], policy: .never)
-            }, computeSnapshot: { (config) -> BareEntry in
-                BareEntry()
-            }, computePlaceHolder: { (context) -> BareEntry in
-                BareEntry()
-            })).body
+           Widget(identifier: "Example",
+            Widget.Provider(
+               { _ in
+                Timeline(entries: [Entry()], policy: .never)
+            }, { _ in
+                Entry()
+            }, { _ in
+                Entry()
+           })).body
         }
     }
     
-or even smaller, but not very useful at the Moment:
-
-
-    struct MiniWidget: Widget {
-        var body: some WidgetConfiguration {
-            EasyWidget<Intent,Entry>().body
-        }
-    }
-
-How to set it up:
-
-Add the following line to ur Widget 
-
-        typealias widget = EasyWidget<Intent,Entry>
-
-and use widgets .body property to parse the WidgetConfiguration in ur Widget.
-
-Currently only IntentTimelines are supported, feel free to contribute.
 
 TODO:
 -  Documentation
