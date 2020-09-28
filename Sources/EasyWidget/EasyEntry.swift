@@ -8,7 +8,7 @@ import SwiftUI
 /*
  
  */
-public class EasyEntry<T>: TimeLineEntryViewable {
+public struct EasyEntry<T>: TimeLineEntryViewable {
     public var date: Date
     public var view: AnyView
     public var data: T?
@@ -19,11 +19,11 @@ public class EasyEntry<T>: TimeLineEntryViewable {
         self.data = data
     }
      
-    public convenience init() {
+    public init() {
         self.init(Date(),AnyView(Text("\(Date())")), data: nil)
     }
     
-    public convenience init(_ text: String) {
+    public init(_ text: String) {
         self.init(Date(),AnyView(Text(text)), data: nil)
     }
 }
