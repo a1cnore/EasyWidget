@@ -3,7 +3,7 @@
 ![SVersion](https://img.shields.io/badge/Swift-5.3-orange)
 ![License](https://img.shields.io/badge/license-GPL--3.0-red) ![Version](https://img.shields.io/badge/version-alpha-red) 
 ![Tests](https://img.shields.io/badge/test%20coverage-0%25-red) 
-![Docs](https://img.shields.io/badge/doc-0%25-red) 
+![Docs](https://img.shields.io/badge/doc-50%25-red) 
 
 Conform to Widgetable:
 ```swift
