@@ -13,6 +13,14 @@ Conform to Widgetable:
       typealias Widget = EasyWidget<Intent,Entry>
     }
 ```
+
+Now u can use Widget in ur definition 
+
+```swift
+    struct ExampleWidget: Widget {
+        Widget().body
+    }
+ ```
  
 Timeline, Snapshot and Placeholder get computed by your closure.
 ```swift
