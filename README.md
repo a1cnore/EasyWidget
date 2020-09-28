@@ -11,7 +11,8 @@ Conform to Widgetable:
       associatedtype Intent: INIntent
       associatedtype Entry: TimeLineEntryViewable
       typealias Widget = EasyWidget<Intent,Entry>
-    }```
+    }
+```
  
 Timeline, Snapshot and Placeholder get computed by your closure.
 ```swift
@@ -26,7 +27,8 @@ Timeline, Snapshot and Placeholder get computed by your closure.
                 Entry()
            })).body
         }
-    }```
+    }
+```
 
 TODO:
 -  Documentation
