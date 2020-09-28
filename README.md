@@ -5,20 +5,16 @@
 ![Tests](https://img.shields.io/badge/test%20coverage-0%25-red) 
 ![Docs](https://img.shields.io/badge/doc-0%25-red) 
 
-Configuring a Widget has more to do with SiriKit than with the actual Widget.
-This Source is to make Widget Configuration easier.
-
-
 Conform to Widgetable:
-
+```swift
     public protocol EasyWidgetable {
       associatedtype Intent: INIntent
       associatedtype Entry: TimeLineEntryViewable
       typealias Widget = EasyWidget<Intent,Entry>
-    }
+    }```
  
 Timeline, Snapshot and Placeholder get computed by your closure.
-
+```swift
     struct ExampleWidget: Widget {
            Widget(identifier: "Example",
             Widget.Provider(
@@ -30,8 +26,7 @@ Timeline, Snapshot and Placeholder get computed by your closure.
                 Entry()
            })).body
         }
-    }
-    
+    }```
 
 TODO:
 -  Documentation
