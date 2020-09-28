@@ -14,7 +14,7 @@ Conform to Widgetable:
     }
 ```
 
-Now u can use Widget in ur definition 
+Now u can use Widget in ur definition:
 
 ```swift
     struct ExampleWidget: Widget {
@@ -22,7 +22,7 @@ Now u can use Widget in ur definition
     }
  ```
  
-Timeline, Snapshot and Placeholder get computed by your closure.
+Timeline, Snapshot and Placeholder get computed by your closure:
 ```swift
     struct ExampleWidget: Widget {
            Widget(identifier: "Example",
