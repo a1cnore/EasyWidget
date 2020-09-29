@@ -18,7 +18,9 @@ Now u can use Widget in ur definition:
 
 ```swift
     struct ExampleWidget: Widget {
-        Widget().body
+        var body: some WidgetConfiguration {
+            Widget().body
+        }
     }
  ```
  
